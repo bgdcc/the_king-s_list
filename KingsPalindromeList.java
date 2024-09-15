@@ -227,7 +227,7 @@ class KingsPalindromeList {
         long[] longArr = new long[myArr.length];
 
         for(int i = 0; i < myArr.length; i++){
-            longArr[i] = Integer.valueOf(myArr[i]);
+            longArr[i] = Long.valueOf(myArr[i]);
         }
 
 
