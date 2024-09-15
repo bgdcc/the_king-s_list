@@ -224,26 +224,26 @@ class KingsPalindromeList {
 
     // Returns a sorted integer array.
     private long[] insertionSort(String[] myArr){
-        long[] intArr = new long[myArr.length];
+        long[] longArr = new long[myArr.length];
 
         for(int i = 0; i < myArr.length; i++){
-            intArr[i] = Integer.valueOf(myArr[i]);
+            longArr[i] = Integer.valueOf(myArr[i]);
         }
 
 
-        for(int i = 1; i < intArr.length; i++){
-            long key = intArr[i];
+        for(int i = 1; i < longArr.length; i++){
+            long key = longArr[i];
             int j = i - 1;
 
-            while(j >= 0 && intArr[j] > key){
-                intArr[j+1] = intArr[j];
+            while(j >= 0 && longArr[j] > key){
+                longArr[j+1] = longArr[j];
                 j -= 1;
             }
 
-            intArr[j+1] = key;
+            longArr[j+1] = key;
         }
 
-        return intArr;
+        return longArr;
 
     }
 
