@@ -209,8 +209,10 @@ class KingsPalindromeList {
             int startMiddle = (myArr[correctIndex].length() / 2) - (myArr[i].length() / 2);
             int endMiddle = (myArr[correctIndex].length() / 2) + (myArr[i].length() / 2) + 1;
 
-            if(myArr[correctIndex].substring(startMiddle, endMiddle).equals(myArr[i])){
-                bigMagicSet.add(myArr[i]);
+            if (myArr[correctIndex].length() >= myArr[i].length()){
+                if(myArr[correctIndex].substring(startMiddle, endMiddle).equals(myArr[i])){
+                    bigMagicSet.add(myArr[i]);
+                }
             }
 
         }
